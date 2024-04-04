@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  padding: 20px;
+}
+
+.center-content {
+  max-width: 400px;
+  width: 100%;
+}
+
+.uploader-content {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.file-input-label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 20px;
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s;
+}
+.file-input{
+  display: none;
+}
+
+.file-input-label:hover {
+  border-color: #007bff;
+}
+
+.upload-icon {
+  font-size: 48px;
+  color: #007bff;
+}
+
+.progress-container {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 200px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  height: 20px;
+  overflow: hidden;
+}
+
+.progress-text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  color: #333;
+  font-weight: bold;
+}
+
+.progress-bar {
+  background-color: rgb(52, 8, 250); 
+  height: 100%;
+  transition: width 0.3s ease; 
+}
+
+.progress-bar.complete {
+  background-color: #007bff; 
+}
+
+.upload-button,
+.cancel-button {
+  background-color: #007bff; 
+  color: #fff; 
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-top: 10px;
+  transition: background-color 0.3s, color 0.3s; 
+}
+
+.upload-button:hover,
+.cancel-button:hover {
+  background-color: #1c2f42; 
+}
+
+.upload-button {
+  margin-right: 12em; 
+}
